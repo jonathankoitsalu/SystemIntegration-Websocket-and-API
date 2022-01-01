@@ -1,0 +1,3 @@
+var qDevice = "IF NOT EXISTS (SELECT deiveceId FROM device WHERE deviceName = @deviceName) INSERT INTO DeviceName OUTPUT inserted.deviceId VALUES (@deviceName, @mcuType, @sensor) ELSE SELECT Id FROM device WHERE deviceName = @deviceName";
+var qLocation = "IF NOT EXISTS (SELECT locationId FROM location WHERE latitude = @latitude AND longitude = @longitude) INSERT INTO location OUTPUT inserted.locationId VALUES (@latitude, @longitude) ELSE SELECT locationId FROM location WHERE latitude = @latitude AND longitude = @longitude";
+var qMeasurement = "INSERT INTO measurement VALUES (@deviceId, @locationId, @measurementTime, @temperature, @humidity)";

@@ -1,0 +1,121 @@
+html, body{
+  background: linear-gradient(to bottom right, #ffff99 0%, #99ff66 100%);
+  height: 110%;
+  font-family: 'verdana';
+}
+
+.head{
+  display: inline-block;
+  color:rgb(83, 218, 38);
+  text-shadow: 5px 5px 5px rgba(208, 227, 5, 0.9);
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #7b61fb;
+}
+
+.current-box{
+  color: rgb(237, 180, 57);
+  background: rgb(203, 227, 195);
+  border: 3px solid #fceb6c;
+  display: inline-block;
+  height: 250px;
+  width: 250px;
+  border-radius:25px;
+  box-shadow: 5px 5px 15px -5px rgba(210, 233, 0, 0.9);
+}
+
+.content{
+  display: inline-block;
+    width: 700px;
+    height:100%;
+  }
+
+p{
+  padding:10px;
+  text-align: center;
+  display: inline-block;
+  font-weight: bold;
+  width: 100px;
+  color: rgb(55, 55, 54);
+}
+
+.item-container{
+  display: inline-block;
+  width: 700px;
+  align-self: center;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  border: 1px solid #fff;
+  border-radius: 15px;
+  margin:5px;
+  background-color: rgb(182, 244, 165);
+  animation-name: highlights;
+  animation-duration: 1s;
+}
+@keyframes highlights{
+  0%   {background-color: rgb(182, 244, 165);}
+  25%  {background-color: rgba(222, 222, 87, 0.475);}
+  50%  {background-color: rgb(249, 249, 61);}
+  100% {background-color: rgb(182, 244, 165);}
+
+}
+
+#footer{
+  width: 100%;
+  background-color: #cde915;
+  margin:0px;
+  padding: 0px;
+}
+.footer{
+  position:fixed;
+  margin:0px 0px 0px 0px;
+  padding:0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1300px) {
+  html{
+    background: linear-gradient(to bottom right, #ffff99 0%, #99ff66 100%);
+    height:1000px
+  }
+  .content{
+    width: 95%;
+  }
+  .item-container{
+    width: 95%;
+  }
+  .footer{
+    width: 100%;
+  }
+  #footer{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  p{
+    font-size: 56%;
+    padding: 0;
+    margin: 0;
+    width: 20%;
+  }
+}
+
+

@@ -1,0 +1,46 @@
+Översikt:
+
+* Skicka sensordata till molnservice(via java program).
+	- Skicka via esp32 från alla medlemmar
+	- data skickas via HTTP Post
+
+* Ta emot sensoradata i Java
+	- Java rest projekt med Get, Post
+
+* Uppdatera en databas via Java applikationen. Behöver ej ske i realtid.
+	- Organisera data i relevanta tabeller
+
+* Frontend hämtar data via REST från Java
+	- Hämtas via GET request
+
+När G är klart, fortsätt med:
+* Koppla esp32 via websocket till Java
+* Koppla upp frontend med websocket för att uppdatera sensordata i realtid.
+
+
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Att göra nu:
+
+0) START: Skapa repos, Spring-boot projekt, Index för HTML sida, fylla ut SCRUM-board, etc ...
+	- Ladda upp allt till GitHub så alla kan få tillgång till startdelarna.
+	- Skapa en SCRUM-board med cards/begränsingar och delmoment, samt uppskatta arbetstiderna till sprintar.
+	- Eventuell uppföljning i daily standups (korta avstämningsmöten) för omprioritering eller flytta delmoment.
+
+1) Esp32 kod som skickar upp data till Java.
+
+2) Skapa upp databas tabeller så det är klart att ta emot data. Se
+
+3) Java program som hanterar inData:
+	- REST controller
+	- Parsa data mot SQL tabeller
+	- Hantera utData till databasen
+
+4) ....
+
+
+SLUT: 
+	Gå igenom kod så alla förstår och kan förklara funktionaliteten. 
+	Demoa systemet, förklara designval och peka ut nyckeldelarna i vårt projekt.
+	
+	

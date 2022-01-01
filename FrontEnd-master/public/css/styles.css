@@ -1,0 +1,134 @@
+html {
+  background-color: #E4E9FD;
+  background-image: -webkit-linear-gradient(65deg, #8fd057 50%, #E4E9FD 50%);
+  height: 100%;
+  font-family: 'helvetica neue';
+}
+
+h1 {
+  color: rgb(237, 186, 57);
+  padding: 0px;
+  font-size: 1.5rem;
+  
+}
+
+h2{
+  color: rgb(194, 208, 45);
+  padding: 0px;
+  font-size: 1.5rem;
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+}
+
+.tablebox{
+  margin: 0 auto, 100 auto;
+  display: inline-block;
+
+}
+
+.hbox {
+  max-width: 900px;
+  margin: 10px auto;
+  background: rgb(203, 227, 195);
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.box {
+  
+  max-width: 900px;
+  margin: 10px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+
+#heading {
+  background-color: #edf7e5;
+  text-align: center;
+  height: 200px;
+  width: 200px;
+  border: 3px solid #e0e850;
+  border-radius: 25px;
+  float: left;
+  margin-left: 10px;
+
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+input:checked+p {
+  text-decoration: line-through;
+  text-decoration-color: #A683E3;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+p {
+  display: inline-block;
+  margin: 0;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #00204a;
+  width: 150px;
+}
+
+form.item {
+  text-align: center;
+  margin-left: 20px;
+}
+
+button {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #A683E3;
+  color: #fff;
+  font-size: 30px;
+  padding-bottom: 6px;
+  border-width: 0;
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 313px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #A683E3;
+}
+
+::placeholder {
+  color: grey;
+  opacity: 1;
+}
+
+footer {
+  color: white;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
